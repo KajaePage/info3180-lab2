@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block main %}
+<div class = "profile-body">
+    <div class = "top">
+        <div class = "profile-card">
+            <img id = "profile-image" src = "{{url_for('static', filename ='images/image3a.jpeg')}}" >
+        </div> 
+        
+        <div class = "profile-info">
+            <h3 class = "P-Name">Kajae Page</h3>
+            <p class = "P-Handle">@_knikolou</p>
+            <p class = "P-Location">Manchester, Jamaica</p>
+            <p class = "Datejoined">Joined {{ date_joined }}</p>
+        </div>
+    </div>
+
+    <div class = "bottom">
+        <div class = "Bio">
+            <p class="bio">Hi, I am a third-year student attending The University of the West Indies who is pursuing a double major. I have an introverted personality, thus making me an individual who gets my energy from spending time alone.</p>
+        </div>
+        <div class = "profile-analysis">
+            <div class = "Posts">
+                <div><h3>5</h3></div>
+                <div><p class = "text">Posts</p></div>
+            </div>
+            <div class = "Following">
+                <div><h3>510</h3></div>
+                <div><p class = "text">Following</p></div>
+            </div>
+            <div class = "Followers">
+                <div><h3>2564</h3></div>
+                <div><p class = "text">Followers</p></div>
+            </div>
+        </div>
+        <div class="follow-btn">
+            <div class = "btn-b">
+            <button type="button" class="btn">Follow</button>
+            </div>
+        </div>
+    </div>
+</div> 
+{% endblock %}
